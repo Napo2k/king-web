@@ -1,14 +1,24 @@
-apply plugin: 'jetty'
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.gretty' version '3.0.3'
 
-configurations {
-  provided
 }
+repositories {
+    jcenter()
+}
+
 
 dependencies {
-  provided 'javax.servlet:servlet-api:2.4'
-  compile configurations.provided
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    testCompile 'org.mockito:mockito-core:2.22.0'
 }
 
-repositories {
-  mavenCentral()
+
+gretty {
+    loggingLevel = "DEBUG"
+    httpPort = 8088
+    contextPath = '/'
 }
