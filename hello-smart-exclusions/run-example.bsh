@@ -1,6 +1,0 @@
-#!/bin/bash
-gradle doItAll
-gradle doItAll -x integrationTestStuff
-gradle doItAll -x unitTestStuff
-gradle doItAll -x deployStuff
-gradle doItAll -x integrationTestStuff -x unitTestStuff

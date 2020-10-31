@@ -1,7 +1,0 @@
-task copyPoems(type: Copy) { 
-  from 'text-files'
-  into 'build/poems'
-}
-
-println "HELPFUL:"
-println files(copyPoems).files

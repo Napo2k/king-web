@@ -1,5 +1,0 @@
-someproject = false
-
-task doOtherBThings << {
-    println "Performing work in doOtherBThings"
-}

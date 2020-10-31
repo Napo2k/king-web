@@ -1,9 +1,0 @@
-<project>
-  <target name="zipsourceInAnt">
-    <zip destfile='samples-from-ant.zip'>
-      <fileset dir= 'samples'>
-        <include name='**.txt'/>
-      </fileset>
-    </zip>
-  </target>
-</project>

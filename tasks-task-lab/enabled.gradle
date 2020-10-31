@@ -1,9 +1,0 @@
-task templates << {
-  println 'process email templates'
-}
-
-task sendEmails(dependsOn: templates) << {
-  println 'send emails'
-}
-
-sendEmails.enabled = false

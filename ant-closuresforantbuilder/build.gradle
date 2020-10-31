@@ -1,7 +1,0 @@
-task zipsourceInGradle << {
-    ant.zip(destfile: 'samples-from-gradle.zip') {
-        fileset(dir: 'samples') {
-            include(name: '**.txt')
-        }
-    }
-}

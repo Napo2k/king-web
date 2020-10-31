@@ -1,5 +1,0 @@
-apply plugin: 'liquibase'
-
-task liquibaseInit {
-	dependsOn << [ generateChangeLog, changeLogSync ]
-}

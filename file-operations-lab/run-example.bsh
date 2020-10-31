@@ -1,4 +1,0 @@
-#!/bin/bash
-gradle -b trivial-copy.gradle copyPoems
-gradle -b copy-exclude.gradle copyPoems
-gradle -b copy-include.gradle copyPoems

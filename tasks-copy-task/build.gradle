@@ -1,5 +1,0 @@
-task copyFiles(type: Copy) {
-  from 'resources'
-  into 'target'
-  include '**/*.xml', '**/*.txt', '**/*.properties'
-}

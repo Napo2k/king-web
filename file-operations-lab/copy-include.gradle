@@ -1,5 +1,0 @@
-task copyPoems(type: Copy) { 
-  from 'text-files'
-  into 'build/poems'
-  include '**/sh*.txt'
-}
