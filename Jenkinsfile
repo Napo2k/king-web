@@ -9,16 +9,6 @@ pipeline {
     }
 
     stages {
-      /*
-        stage('Checkout') {
-            steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-                doGenerateSubmoduleConfigurations: false,
-                extensions: [], submoduleCfg: [],
-                userRemoteConfigs: [[url: 'https://github.com/allmankind123/king-web.git']]])
-            }
-        }
-      */
         stage('Unit & Integration Tests') {
             steps {
                 script {
