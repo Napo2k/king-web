@@ -33,7 +33,7 @@ public class ServletTest {
 
 
     @Test
-    public void doGet() throws Exception {
+    public void testHelloUrl() throws Exception {
         StringWriter stringWriter = new StringWriter();
         PrintWriter printWriter = new PrintWriter(stringWriter);
         when(response.getWriter()).thenReturn(printWriter);
